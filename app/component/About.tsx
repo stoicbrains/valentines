@@ -38,12 +38,12 @@ const About = () => {
       </motion.div>
       <button onClick={()=>{
          setTrigger(true)
-      }} className='sm:h-[70px] sm:w-[120px] h-[30px] w-[50px] rounded-xl bg-pink-500 absolute left-[65%] top-[60%]'>Click Here</button>
+      }} className='sm:h-[70px] sm:w-[120px] h-[30px] w-[50px] rounded-xl bg-pink-500 absolute left-[65%] top-[60%] sm:text-lg text-sm'>Click Here</button>
       <motion.div transition={{delay:0.3,duration:0.7,ease:'easeOut'}} className={`h-screen w-screen absolute z-[1] [backdrop-filter:blur(3px)] bg-transparent top-0 left-0 overflow-y-hidden`} animate={trigger?{y:0}:{y:1000}}>
         <div className={`absolute z-[5] ${size?'left-[40%]':'left-[50%]'} sm:top-[60%] ${size?'top-[51%]':'top-[61%]'} translate-y-[-50%] transition-all duration-1000 ease-out ${size?'sm:h-[40rem]':'sm:h-[10rem]'} ${size?'sm:w-[40rem]':'sm:w-[10rem]'} ${size?'':'h-[5rem]'} ${size?'':'w-[5rem]'}`}>
           <Image src={rose} alt='' objectFit='cover' height={size?300:200} width={size?300:200}/>
         </div>
-        <div  className={`sm:h-[60vh] sm:w-[35vw] h-[40vh] w-[90vw] rounded-[17px] bg-white z-[2] absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]`}><p className='text-xl font-semibold text-gray-950 p-[20px]'>Dear,Love im so fucking obsessed with you that there is no end to my obsession,you are fucking gorgeous and above all you are mine ,you are elegant and you shine differently ,you are the only girl who is close to being perfect,i really love you girl im high over heels for you ,i really want to spend the rest of my life with you ,please stay mine forever ,you are my very sacred treasure <span className='text-red-600'>I LOVE YOU SWATU</span></p><button className='text-gray-950 text-xl relative left-[25%] sm:top-[5%]' onClick={()=>{
+        <div  className={`sm:h-[60vh] sm:w-[35vw] h-[40vh] w-[90vw] rounded-[17px] bg-white z-[2] absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]`}><p className='sm:text-xl text-sm font-semibold text-gray-950 p-[20px]'>Dear,Love im so fucking obsessed with you that there is no end to my obsession,you are fucking gorgeous and above all you are mine ,you are elegant and you shine differently ,you are the only girl who is close to being perfect,i really love you girl im high over heels for you ,i really want to spend the rest of my life with you ,please stay mine forever ,you are my very sacred treasure <span className='text-red-600'>I LOVE YOU SWATU</span></p><button className='text-gray-950 text-xl relative left-[25%] sm:top-[5%]' onClick={()=>{
           
           SetSize(true)
           
