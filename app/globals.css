@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shad{
+  filter: drop-shadow(0px 2px 4px black);
+}
+.blur{
+  backdrop-filter: blur(0px);
+}
+::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 21px;
+}
+::-webkit-scrollbar-track{
+  background-color:#ffc8dd;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(121, 8, 8, 0.258);
+  border-radius: 21px;
+}
